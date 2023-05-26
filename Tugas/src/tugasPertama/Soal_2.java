@@ -67,7 +67,8 @@ public class Soal_2 {
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
 				if ((i == j) || (i + j) == n - 1) {
-					Soal_2_B_2(n);
+					int ouput = Fibonnaci(x);
+					System.out.print(ouput);
 				} else {
 					System.out.print("  ");
 				}
