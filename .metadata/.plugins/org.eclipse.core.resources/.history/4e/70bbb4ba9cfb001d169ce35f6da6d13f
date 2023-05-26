@@ -1,0 +1,53 @@
+package tugasPertama;
+
+public class Test {
+
+	public static void main(String[] args) {
+		Soal_1_D(9);
+		System.out.println("\n");
+	}
+
+	private static void Soal_1_D(int n) {
+		int x = 0, hasil = 0;
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if ((i == j)) {
+					hasil = fibonacci(x);
+					System.out.print(hasil + " ");
+				} else if ((i + j) == n - 1) {
+					hasil = fibonacci(x);
+					System.out.print(hasil + " ");
+				} else {
+					System.out.print("  ");
+				}
+				x++;
+			}
+			x = 1;
+			System.out.println();
+
+		}
+	}
+
+	private static int fibonacci(int n) {
+		// Fibonacci dengan fungsi rekursif
+		if (n == 0 || n == 1)
+			return 1;
+		else
+			return fibonacci(n - 1) + fibonacci(n - 2);
+	}
+
+	private static int simetris(int n) {
+		int j = (n / 2) + 1;
+		// bagian pertama
+		for (int i = 0; i < j; i++) {
+//			int fib = B2(i);
+//			System.out.print(fib + " ");
+		}
+		// bagian kedua
+		for (int i = j - 2; i >= 0; i--) {
+//			int fib = B2(i);
+//			System.out.print(fib + " ");
+		}
+		return 0;
+	}
+}

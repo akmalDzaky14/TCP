@@ -1,0 +1,33 @@
+package tugasPertama;
+
+import java.util.*;
+
+public class PolaFibonacci {
+	public static void main(String[] args) {
+		try (Scanner scanner = new Scanner(System.in)) {
+			System.out.print("Masukkan nilai N: ");
+			int n = scanner.nextInt();
+			int j = (n / 2) + 1;
+			if ((j % 2 == 0) || j < 4) {
+				System.out.print("Nilai harus ganjil");
+			} else {
+				System.out.println("Deret Fibonacci dan Pola Simetris:");
+				for (int i = 0; i < j; i++) {
+					int fib = fibonacci(i);
+					System.out.print(fib + " ");
+				}
+				for (int i = j - 2; i >= 0; i--) {
+					int fib = fibonacci(i);
+					System.out.print(fib + " ");
+				}
+			}
+		}
+	}
+
+	public static int fibonacci(int n) {
+		if (n == 0 || n == 1)
+			return 1;
+		else
+			return fibonacci(n - 1) + fibonacci(n - 2);
+	}
+}

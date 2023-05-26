@@ -1,0 +1,14 @@
+package tcp.kelasTerbuka;
+
+import java.util.*;
+
+public class OperatorLogika19 {
+
+	public static void main(String[] args) {
+		// Operasi logika boolean
+		// Membuat sebuah objek untuk menangkap input dari use
+		Scanner inputUser = new Scanner(System.in);
+		
+	}
+
+}

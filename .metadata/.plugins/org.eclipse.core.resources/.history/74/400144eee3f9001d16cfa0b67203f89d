@@ -1,0 +1,13 @@
+package tcp.kelasTerbuka;
+
+public class OperatorBitwise16 {
+	public static void main(String[] args) {
+		// Operator Bitwise --> operator untuk melakukan operasi nilai bit
+		
+		byte a = 3;
+		byte b;
+		String a_bits, b_bits;
+		
+		a_bits = String.format("%8s", Integer.toBinaryString(a).replace(' ', '0'));
+	}
+}

@@ -1,0 +1,75 @@
+package tugasPertama;
+
+import java.util.*;
+
+public class Soal_1 {
+
+	public static void main(String[] args) {
+//		Scanner inputAngka = new Scanner(System.in);
+//		System.out.print("Masukkan angka: ");
+//		int angka = inputAngka.nextInt();
+		System.out.println();
+		Soal_1_A(9);
+		System.out.println();
+		Soal_1_B(9);
+		System.out.println();
+		Soal_1_C(9);
+		System.out.println();
+		Soal_1_D(9);
+
+	}
+
+	private static void Soal_1_A(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void Soal_1_B(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if ((i == j) || (i + j) == n - 1) {
+					System.out.print("* ");
+				} else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+	private static void Soal_1_C(int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+	}
+
+	private static void Soal_1_D(int n) {
+
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				if ((i == j) || (i + j) == n - 1) {
+					System.out.print("* ");
+				} else {
+					System.out.print("  ");
+				}
+			}
+			System.out.println();
+		}
+	}
+
+	public static void angkaGanjil(int batas) {
+		for (int i = 1; i <= batas; i++) {
+			if (i % 2 != 0) {
+				System.out.print(i + " ");
+			}
+		}
+	}
+
+}
