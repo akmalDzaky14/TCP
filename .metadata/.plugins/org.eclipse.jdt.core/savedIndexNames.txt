@@ -1,4 +1,0 @@
-INDEX VERSION 1.132+D:\Akmal\Job\PT. Pro Sigmaka Mandiri\Private\Project\TCP\.metadata\.plugins\org.eclipse.jdt.core
-2627073778.index
-1865797976.index
-3413725848.index
