@@ -1,0 +1,15 @@
+package tcp.kelasTerbuka;
+
+import java.util.Arrays;
+
+public class Operasi_Array {
+
+	public static void main(String[] args) {
+		int[] arrayAngka1 = { 1, 2, 3, 4, 5 };
+		
+		//merubah array menjadi string
+		System.out.println("\nMerubah array menjadi string\n==========");
+		printArray(arrayAngka1);
+	}
+
+}

@@ -1,5 +1,6 @@
 Coba/
-.metadata/
+**/metadata/**
 SSH.pub
 SSH
 .gitignore
+Tugas/bin/tugasPertama/
